@@ -3,6 +3,7 @@ const createButton = document.querySelector(".create");
 const resetButton = document.querySelector(".reset");
 const modal = document.querySelector(".modal-container");
 const exitModalButton = document.querySelector(".exit");
+const infoButton = document.querySelector(".modalAppear");
 let squareNum = 16;
 
 // get random color by generating a random hex color
@@ -59,6 +60,10 @@ resetButton.addEventListener("click", () => {
 exitModalButton.addEventListener("click", () => {
     modal.style.display = "none";
 });
+
+infoButton.addEventListener("click", () => {
+    modal.style.display = "flex";
+})
 
 
 createGrid(squareNum);

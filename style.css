@@ -79,6 +79,17 @@ button.exit {
 }
 
 
+.modalAppear {
+    color: white;
+    position: fixed;
+    background: none;
+    padding: 0;
+    margin: 0;
+    scale: 1.3;
+    right: 30px;
+    bottom: 20px;
+}
+
 div.container {
     display: flex;
     justify-content: center;
