@@ -51,21 +51,24 @@ createButton.addEventListener("click", () => {
         return;
     } else {
         squareNum = newNum;
-    }
+    } 
+    // clear grid before creating a new one
     pixelContainer.innerHTML = "";
     createGrid(squareNum);
 });
 
-// event listener for reset button
+// clear grid of previous drawing
 resetButton.addEventListener("click", () => { 
     pixelContainer.innerHTML = "";
     createGrid(squareNum);
 });
 
+// hide modal when uses presses 'x'
 exitModalButton.addEventListener("click", () => {
     modal.style.display = "none";
 });
 
+// make modal visible without animation
 infoButton.addEventListener("click", () => {
     modal.style.display = "flex";
     modalTitle.style.animation = "none";

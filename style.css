@@ -15,6 +15,16 @@ body {
     100% {opacity: 1;}
 }
 
+@keyframes slideIn {
+    0% { transform: translateY(-150%); opacity: 0; }
+    60% { transform: translateY(0); opacity: 1; }
+    75% { transform: translateY(-10%); }
+    85% { transform: translateY(5%); }
+    95% { transform: translateY(-2%); }
+    100% { transform: translateY(0); }
+}
+
+
 div.modal-container {
     background-color: white;
     display: flex;
@@ -27,36 +37,6 @@ div.modal-container {
     border-radius: 14px;
     box-shadow: 0px 0px 100vh 100vh rgba(0, 0, 0, 0.337);
     animation: modalFadeIn .3s ease-in;
-}
-
-
-@keyframes slideIn {
-    0% { transform: translateY(-150%); opacity: 0; }
-    60% { transform: translateY(0); opacity: 1; }
-    75% { transform: translateY(-10%); }
-    85% { transform: translateY(5%); }
-    95% { transform: translateY(-2%); }
-    100% { transform: translateY(0); }
-}
-
-div.top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 30px;
-    /* animation: slideIn 1s ease-in-out; */
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-.title {
-    font-family: "Dangrek", serif;
-    font-size: 70px;
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    margin: 0px;
 }
 
 .modal-title {
@@ -74,6 +54,36 @@ div.top {
     width: 530px;
     margin-left: 25px;
     animation: slideIn 1s ease-in-out;
+}
+
+div.pixel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 450px;
+    height: 450px;
+    border: 2px solid black;
+    background-color: white
+}
+
+div.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.title {
+    font-family: "Dangrek", serif;
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0px;
 }
 
 button {
@@ -95,7 +105,6 @@ button.exit {
     padding: 3px 15px;
 }
 
-
 .modalAppear {
     color: white;
     position: fixed;
@@ -106,18 +115,3 @@ button.exit {
     right: 30px;
     bottom: 20px;
 }
-
-div.pixel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 450px;
-    height: 450px;
-    border: 2px solid black;
-    background-color: white
-}
-
-
-
-
