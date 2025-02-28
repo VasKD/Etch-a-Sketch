@@ -46,8 +46,8 @@ const modalP = document.querySelector(".modal-message");
 // event listener for create button
 createButton.addEventListener("click", () => { 
     let newNum = prompt("Enter the number of squares per side (max 100):");
-    if (newNum > 100) {
-        alert("Please enter a number less than or equal to 100");
+    if (newNum > 100 || isNaN(newNum) || newNum < 1) {
+        alert("Please enter a number between 1 and 100, inclusive.");
         return;
     } else {
         squareNum = newNum;
