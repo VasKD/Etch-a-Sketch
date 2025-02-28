@@ -30,7 +30,7 @@ function createGrid(squareNum){
         pixelContainer.appendChild(pixel);
     }
 
-    document.body.appendChild(container);
+    document.body.appendChild(pixelContainer);
 }
 
 
@@ -50,13 +50,13 @@ createButton.addEventListener("click", () => {
     } else {
         squareNum = newNum;
     }
-    container.innerHTML = "";
+    pixelContainer.innerHTML = "";
     createGrid(squareNum);
 });
 
 // event listener for reset button
 resetButton.addEventListener("click", () => { 
-    container.innerHTML = "";
+    pixelContainer.innerHTML = "";
     createGrid(16);
 });
 

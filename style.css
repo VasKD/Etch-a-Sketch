@@ -18,8 +18,8 @@ body {
 div.modal-container {
     background-color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     position: fixed;
     z-index: 1;
     min-height: 400px;
@@ -50,13 +50,19 @@ div.top {
     margin-top: 0px;
 }
 
-h1 {
+.title {
     font-family: "Dangrek", serif;
     font-size: 70px;
     text-align: center;
     color: white;
     text-shadow: 2px 2px 4px #000000;
     margin: 0px;
+}
+
+.modal-title {
+    font-family: "Dangrek", serif;
+    font-size: 35px;
+    margin-left: 25px;
 }
 
 button {
