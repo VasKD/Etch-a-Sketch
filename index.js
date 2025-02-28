@@ -39,6 +39,8 @@ const resetButton = document.querySelector(".reset");
 const modal = document.querySelector(".modal-container");
 const exitModalButton = document.querySelector(".exit");
 const infoButton = document.querySelector(".modalAppear");
+const modalTitle = document.querySelector(".modal-title");
+const modalP = document.querySelector(".modal-message");
 
 
 // event listener for create button
@@ -57,7 +59,7 @@ createButton.addEventListener("click", () => {
 // event listener for reset button
 resetButton.addEventListener("click", () => { 
     pixelContainer.innerHTML = "";
-    createGrid(16);
+    createGrid(squareNum);
 });
 
 exitModalButton.addEventListener("click", () => {
@@ -66,6 +68,9 @@ exitModalButton.addEventListener("click", () => {
 
 infoButton.addEventListener("click", () => {
     modal.style.display = "flex";
+    modalTitle.style.animation = "none";
+    modalP.style.animation = "none";
+
 })
 
 

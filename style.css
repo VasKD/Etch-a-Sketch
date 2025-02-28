@@ -45,7 +45,7 @@ div.top {
     align-items: center;
     flex-direction: column;
     margin-bottom: 30px;
-    animation: slideIn 1s ease-in-out;
+    /* animation: slideIn 1s ease-in-out; */
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -63,6 +63,17 @@ div.top {
     font-family: "Dangrek", serif;
     font-size: 35px;
     margin-left: 25px;
+    animation: slideIn 1s ease-in-out;
+
+}
+
+.modal p {
+    font-family: "Kanit", serif;    
+    font-weight: 500;
+    padding-top: 15px;
+    width: 530px;
+    margin-left: 25px;
+    animation: slideIn 1s ease-in-out;
 }
 
 button {
