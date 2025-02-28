@@ -1,5 +1,6 @@
 body {
     background-color: rgb(15, 110, 134);
+    overlay: ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,6 +8,26 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+}
+
+@keyframes modalFadeIn {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+div.modal-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    min-height: 400px;
+    width: 600px;
+    border-radius: 14px;
+    box-shadow: 0px 0px 100vh 100vh rgba(0, 0, 0, 0.337);
+    animation: modalFadeIn 1s ease-in;
 }
 
 
@@ -62,6 +83,7 @@ div.container {
     border: 2px solid black;
     background-color: white
 }
+
 
 
 

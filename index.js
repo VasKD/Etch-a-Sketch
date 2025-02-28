@@ -27,6 +27,7 @@ function createGrid(squareNum){
         // Add event listener to each pixel
         pixel.addEventListener("mouseover", () => {
             pixel.style.backgroundColor = getRandomColor();
+            pixel.style.opacity
         });
         container.appendChild(pixel);
     }
