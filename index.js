@@ -1,9 +1,4 @@
-const container = document.querySelector(".container");
-const createButton = document.querySelector(".create");
-const resetButton = document.querySelector(".reset");
-const modal = document.querySelector(".modal-container");
-const exitModalButton = document.querySelector(".exit");
-const infoButton = document.querySelector(".modalAppear");
+const pixelContainer = document.querySelector(".pixel-container");
 let squareNum = 16;
 
 // get random color by generating a random hex color
@@ -32,11 +27,19 @@ function createGrid(squareNum){
             pixel.style.backgroundColor = getRandomColor();
             pixel.style.opacity
         });
-        container.appendChild(pixel);
+        pixelContainer.appendChild(pixel);
     }
 
     document.body.appendChild(container);
 }
+
+
+const createButton = document.querySelector(".create");
+const resetButton = document.querySelector(".reset");
+const modal = document.querySelector(".modal-container");
+const exitModalButton = document.querySelector(".exit");
+const infoButton = document.querySelector(".modalAppear");
+
 
 // event listener for create button
 createButton.addEventListener("click", () => { 

@@ -26,7 +26,7 @@ div.modal-container {
     width: 600px;
     border-radius: 14px;
     box-shadow: 0px 0px 100vh 100vh rgba(0, 0, 0, 0.337);
-    animation: modalFadeIn 1s ease-in;
+    animation: modalFadeIn .3s ease-in;
 }
 
 
@@ -90,7 +90,7 @@ button.exit {
     bottom: 20px;
 }
 
-div.container {
+div.pixel-container {
     display: flex;
     justify-content: center;
     align-items: center;
