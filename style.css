@@ -73,11 +73,10 @@ button {
 
 button.exit {
     position: absolute;
-    top: 6px;
-    right: 5px;
+    top: 9px;
+    right: 9px;
     padding: 3px 15px;
 }
-
 
 
 div.container {
